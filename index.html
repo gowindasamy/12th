@@ -325,6 +325,27 @@ line-height:1.8;
 
 <body>
 
+<script>
+
+/* LOGIN ACCESS CHECK */
+
+const params =
+new URLSearchParams(
+window.location.search
+);
+
+if(
+params.get("access")
+!= "true"
+){
+
+window.location.href =
+"login.html";
+
+}
+
+</script>
+
 <div class="bg"></div>
 
 <div class="glow"></div>
@@ -579,4 +600,4 @@ NCERT மற்றும் State Board books-ஐ
 </div>
 
 </body>
-</html>
+  </html>
